@@ -1,0 +1,45 @@
+  .dashMain{
+    display: flex;
+    flex-direction: column;
+    border: 0;
+    margin: 5px 0;
+
+    h3{
+      cursor: default;
+    }
+  }
+  
+  .dashButton{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px 0;        
+    
+    a{
+      display: flex;
+      flex-direction: column;
+      width: 100px;
+      height: 100px;     
+      justify-content: center;
+      align-items: center;        
+      text-align: center;
+      box-shadow: -5px -5px 20px var(--color-white), 5px 5px 20px var(--color-shadow);
+      border: 2px solid var(--color-bg);    
+      
+      border-radius: 10px;
+      font-weight: bold;
+      font-size: medium;
+      transition: all .5s;
+  
+      &:hover{
+        background-color: var(--dark-700);
+        color: var(--color-bg);
+        border: 2px solid var(--color-white);
+        text-shadow: 0 0 5px var(--color-bg);   
+        padding: 40px 0;
+      }
+    }
+  }
+  
+  
+    

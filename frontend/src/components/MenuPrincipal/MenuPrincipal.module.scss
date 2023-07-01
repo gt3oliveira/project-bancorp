@@ -1,0 +1,68 @@
+.container {
+  display: flex;
+  justify-content: center;      
+}
+
+.card {
+  display: flex;
+  width: 80vw;  
+  height: fit-content;
+  margin-top: 35px;
+  padding: 10px;
+  border-radius: 30px;
+  background: #e0e5ec;  
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.neumorphism {
+  background-color: #e0e5ec;
+  border-radius: 20px;
+  padding: 1rem;
+
+  //dark 9px 9px 16px rgba(163, 177, 198, 0.6),
+  box-shadow: -9px -9px 16px rgba(255, 255, 255, 0.5), 9px 9px 16px rgba(255, 255, 255, 0.5);
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  width: 10vw;
+  align-items: center;
+
+}
+
+.dashboard {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  padding: 1rem;
+  margin: 0 20px;
+}
+
+.dashTitle{
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 5px;
+  border-bottom: 2px solid var(--dark-700);
+  cursor: default;
+
+  h2{
+    margin-bottom: 5px;
+  }
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  width: 19vw;
+
+}
+
+.neumorphism2 {
+  background-color: #e0e5ec;
+  border-radius: 20px;
+  padding: 1rem;
+
+  //dark
+  box-shadow: -9px -9px 16px rgba(163, 177, 198, 0.6), 9px 9px 16px rgba(255, 255, 255, 0.5);
+}

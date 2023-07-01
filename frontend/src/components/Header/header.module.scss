@@ -1,0 +1,52 @@
+.header{        
+    height: 2rem;    
+    background: var(--dark-900); 
+    box-shadow: 1px 1px 16px rgb(40, 40, 60); 
+
+    div{
+        display: flex;
+        max-width: 1120px;
+        height: 2rem;
+        margin: 0 auto;
+        padding: 0 2rem;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.headerNav{
+    display: flex;
+    align-items: center;    
+
+    a{
+        padding: 0 .5rem;
+        position: relative;
+        cursor: pointer;
+        transition: color .5s;
+        
+        & + a{
+            margin-left: 2rem;
+        }
+    
+        &:hover{
+            color: var(--red-900);
+        }
+    }
+
+
+    button{
+        margin-left: 2rem;
+        background: transparent;
+        border: 0;
+        transition: .5s;
+        
+        &:hover{
+            transform: scale(1.2);            
+        }
+    }
+}
+
+.segment {
+    color: var(--color-shadow);
+    text-shadow: 1px 1px 1px var(--color-white);            
+}

@@ -1,0 +1,72 @@
+.main {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 520px;
+    height: fit-content;    
+    align-items: center;
+    padding: 10px;
+    border-radius: 30px;
+    background: #e0e5ec;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.neumorphism {
+    background-color: #e0e5ec;
+    border-radius: 20px;
+    width: 500px;
+    padding: 2rem;
+
+    //dark
+    box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6), -9px -9px 16px rgba(255, 255, 255, 0.5);
+}
+
+.cardText {
+    text-align: center;
+}
+
+
+.formHome {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+
+    input,
+    button {
+        border: 0;
+        outline: 0;
+        font-size: var(--ruler);
+        border-radius: calc(var(--ruler)*20);
+        padding: var(--ruler);
+        margin-bottom: 10px;
+        background-color: var(--color-bg);
+        text-shadow: 1px 1px 0 var(--color-white);
+    }    
+}
+
+.segment {
+    color: var(--color-shadow);
+    text-shadow: 1px 1px 1px var(--color-white);
+    padding: var(--ruler);
+    text-align: center;
+    margin-bottom: calc(var(--ruler)*2);
+}
+
+.text{
+    color: var(--dark-700);
+    
+    transition: .2s;
+
+    &:hover{
+        font-weight: bold;
+    }
+}

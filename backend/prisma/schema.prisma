@@ -1,0 +1,68 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// criar uma migration: yarn prisma migrate dev
+model User {
+  id             String          @id @default(uuid())
+  name           String
+  profissao      String
+  email          String
+  password       String
+  contas         Conta[]
+  depositos      Deposito[]
+  saques         Saque[]
+  transferencias Transferencia[]
+
+  @@map("users")
+}
+
+model Conta {
+  id    String @id @default(uuid())
+  saldo Int
+
+  user    User   @relation(fields: [user_id], references: [id])
+  user_id String
+
+  @@map("contas")
+}
+
+model Deposito {
+  id    String @id @default(uuid())
+  valor Int
+
+  user    User   @relation(fields: [user_id], references: [id])
+  user_id String
+
+  @@map("depositos")
+}
+
+model Saque {
+  id    String @id @default(uuid())
+  valor Int
+
+  user    User   @relation(fields: [user_id], references: [id])
+  user_id String
+
+  @@map("saques")
+}
+
+model Transferencia {
+  id           String @id @default(uuid())
+  remetente    String
+  destinatario String
+  valor        Int
+
+  user    User   @relation(fields: [user_id], references: [id])
+  user_id String
+
+  @@map("transferencias")
+}

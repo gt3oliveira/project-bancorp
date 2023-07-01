@@ -1,0 +1,63 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    cursor: default;
+}
+
+.infoImg{
+    border: 3px solid var(--dark-700);
+    padding: 1rem;
+    border-radius: 10px;   
+    outline: none; 
+    margin-bottom: 5px;    
+}
+
+.infoDashMoney{
+    display: flex;
+    flex-direction: column;    
+    width: 100%;
+    // border: 2px solid green;
+    margin-top: 5px;        
+    margin-top: 20px;
+}
+
+.infoMoney{
+    border-top: 2px solid var(--dark-700);    
+    border-bottom: 2px solid var(--dark-700);
+    padding-bottom: 10px;
+}
+
+.InfoMoneyBackground{
+    background-color: var(--dark-700);
+    display: flex;  
+
+}
+
+.bancario{
+    padding-top: 10px;                
+}
+
+.bancarioImg{
+    margin: 15px 0 15px 15px;
+    padding: 5px; 
+    background-color: var(--color-bg);   
+}
+
+.bancarioInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10px;    
+    
+    span{
+        font-weight: bold;
+        color: var(--color-bg);
+    }
+
+    p{
+        color: var(--color-bg);
+    }
+}
